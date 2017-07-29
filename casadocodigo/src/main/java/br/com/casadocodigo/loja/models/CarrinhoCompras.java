@@ -15,6 +15,9 @@ import org.springframework.web.context.WebApplicationContext;
 // transformando nossa classe em um Bean do Spring estamos também configurando que este objeto será Singleton(unico para todos os usuarios da applicação). 
 // Por padrão, o Spring tem esta configuração para os seus componentes.
 @Component
+// com esse parametro 'proxyMode=ScopedProxyMode.TARGET_CLASS' o Spring criará um proxy envolvendo o objeto alvo (TARGET_CLASS) 
+// afim de possibilitar que as informações possam ser transitadas de um escopo para o outro.
+// dessa forma não precisamos mudar mais o escopo dos controllers que utilizam essa classe.
 @Scope(value=WebApplicationContext.SCOPE_SESSION, proxyMode=ScopedProxyMode.TARGET_CLASS)
 public class CarrinhoCompras {
 	
