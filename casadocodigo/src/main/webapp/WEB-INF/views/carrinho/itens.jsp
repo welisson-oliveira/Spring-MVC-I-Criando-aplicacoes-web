@@ -117,7 +117,7 @@
 							readonly="readonly" id="quantidade" name="quantidade" value="${carrinhoCompras.getQuantidade(item)}" /></td>
 						<td class="numeric-cell">${carrinhoCompras.getTotal(item)}</td>
 						<td>
-							<form action="${s:mvcUrl('CCC#remover').arg(0,item.produto.id).arg(1, item.produto.tipoPreco).build() }" method="post">
+							<form action="${s:mvcUrl('CCC#remover').arg(0,item.produto.id).arg(1, item.tipoPreco).build() }" method="post">
 								<input type="image" src="/excluir.png" alt="Excluir"
 									title="Excluir" />
 							</form>
