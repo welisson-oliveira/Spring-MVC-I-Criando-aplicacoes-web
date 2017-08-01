@@ -26,7 +26,10 @@ public class CarrinhoComprasController implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	
+	// Utilizamos o @AutoWired para indicar ao Spring que o objeto anotado é um Bean 
+	// dele e que queremos que ele nos dê uma instância por meio do recurso de injeção 
+	// de dependência.
 	@Autowired
 	private ProdutoDAO produtoDao;
 	

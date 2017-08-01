@@ -27,8 +27,9 @@ import br.com.casadocodigo.loja.validation.ProdutoValidation;
 @RequestMapping("/produtos")
 public class ProdutosController {
 
-	@Autowired // faz com que o spring instancie o objeto desde que ProdutoDao
-				// seja gerenciado pelo Spring
+	// faz com que o spring instancie o objeto desde que ProdutoDao
+	// seja gerenciado pelo Spring
+	@Autowired 
 	private ProdutoDAO produtoDao;
 	
 	@Autowired

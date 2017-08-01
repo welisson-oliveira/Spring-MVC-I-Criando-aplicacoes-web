@@ -30,7 +30,8 @@ public class AppWebConfiguration {
 	
 	/**
 	 * 	
-	 * @return retorna um objeto do tipo {@link InternalResourceViewResolver} (Resolvedor Interno de Recursos de View) que ajuda o SpringMVC a 
+	 * @return retorna um objeto do tipo {@link InternalResourceViewResolver} <br />
+	 * (Resolvedor Interno de Recursos de View) que ajuda o SpringMVC a <br />
 	 * encontrar as views.
 	 */
 	@Bean

@@ -53,7 +53,8 @@ public class ServletSpringMVC extends AbstractAnnotationConfigDispatcherServletI
 	}
 	
 	/**
-	 *  Esse método é necessario para que o Spring consiga fazer a conversão dos dados recebidos na requisição.
+	 *  Esse método é necessario para que o Spring consiga fazer a conversão dos dados recebidos em uma <br />
+	 *  requisição multpart/form-data. <br />
 	 *  O método setMultipartConfig requer um objeto do tipo MultipartConfigElement. <br />
 	 *  O MultipartConfigElement espera receber uma String que configure o arquivo. <br />
 	 *  Não usaremos nenhuma configuração para o arquivo, queremos receber este do jeito que vier.<br /> 
